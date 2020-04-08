@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="ExploreOnet.ONETLoaderControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExploreOnet"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <DockPanel Margin="100">
+            <Label Content="Loading - Explore ONET" FontSize="40" HorizontalAlignment="Center" DockPanel.Dock="Top" />
+            <Label x:Name="loadingLabel" VerticalAlignment="Top" DockPanel.Dock="Bottom"  Height="60" FontSize="20" Content="I am loading something" HorizontalAlignment="Center" />
+            <Label Background="LightGray" VerticalContentAlignment="Stretch" Width="600" Height="60" Margin="40">
+                <Label x:Name="loadingBar"  Background="CadetBlue" Width="40" HorizontalAlignment="Left" />
+            </Label>
+        </DockPanel>
+    </Grid>
+</UserControl>

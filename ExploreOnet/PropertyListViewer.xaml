@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="ExploreOnet.PropertyListViewer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExploreOnet"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="600">
+    <Grid>
+        <DockPanel>
+            <DockPanel DockPanel.Dock="Left" Width="400">
+                <Label x:Name="searchLabel" Content="Search :" DockPanel.Dock="Top" HorizontalAlignment="Center" FontSize="30" />
+                <Label x:Name="ocpCountLabel" Content="total:" DockPanel.Dock="Top" HorizontalAlignment="Center" FontSize="15" />
+                <ScrollViewer>
+                    <StackPanel x:Name="listPanel"  Orientation="Vertical" />
+                </ScrollViewer>
+            </DockPanel>
+            <DockPanel Background="LightBlue">
+                <!--<TextBox x:Name="searchTb" DockPanel.Dock="Top" Width="400"  Margin="10" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                <StackPanel x:Name="resultPanel" Orientation="Vertical" HorizontalAlignment="Center" DockPanel.Dock="Top"/>-->
+                <ScrollViewer x:Name="clusterView" HorizontalScrollBarVisibility="Auto" />
+            </DockPanel>
+        </DockPanel>
+    </Grid>
+</UserControl>
